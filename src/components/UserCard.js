@@ -43,9 +43,9 @@ const styles = {
     userName: {
         fontFamily: '"Fira Sans",sans-serif',
         fontWeight: '600',
-        fontSize: '22pt',
+        fontSize: '20pt',
         color: 'rgb(82,92,93)',
-        marginBottom: '3%'
+        marginBottom: '2%'
     },
     userCategory: {
         fontFamily: '"Fira Sans",sans-serif',
