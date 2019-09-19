@@ -10,7 +10,7 @@ const UserCard = (props) => {
         return rating.map(isStar => {
             if(isStar === 1) return <img style={styles.userRating} src={star} alt={'star'}/>
             else return null
-        })                      
+        })
     }
 
     return (
