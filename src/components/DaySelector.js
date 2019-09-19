@@ -19,9 +19,9 @@ const DaySelector = (props) => {
             </Row>
             </div>
             <Row style={styles.dateSection}>
-                <Col style={{ padding: '0px', marginLeft: '2%' }} xl={1}><i style={styles.arrowIcon} className="fa fa-arrow-circle-left"></i></Col>
+                <Col style={styles.arrowWrapperLeft} xl={1}><i style={styles.arrowIcon} className="fa fa-arrow-circle-left"></i></Col>
                 {renderAvailableDays()}
-                <Col style={{ padding: '0px', marginRight: '2%' }} xl={1}><i style={styles.arrowIcon} className="fa fa-arrow-circle-right"></i></Col>
+                <Col style={styles.arrowWrapperRight} xl={1}><i style={styles.arrowIcon} className="fa fa-arrow-circle-right"></i></Col>
             </Row>
         </React.Fragment>
     );
@@ -50,7 +50,6 @@ const styles = {
         fontSize: '12pt',
         marginBottom: '0px',
         fontFamily: '"Fira Sans",sans-serif'
-
     },
     dateSection: {
         boxShadow: '0px 6px 25px -8px rgba(0,0,0,0.75)',
@@ -60,6 +59,14 @@ const styles = {
     resetMargins: {
         marginTop: '10%',
         marginBottom: '0px'
+    },
+    arrowWrapperLeft: {
+        padding: '0px',
+        marginLeft: '2%'
+    },
+    arrowWrapperRight: {
+        padding: '0px',
+        marginRight: '2%'
     },
     arrowIcon: {
         fontSize: '30pt',
